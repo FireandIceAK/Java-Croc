@@ -8,7 +8,7 @@ public class Main{
         //Создаю конструкцию, которая преобразует заданный размер в байтах в человеческом виде
         if (n>0){
             if (n < 1024f){
-                System.out.println(n+"1 B");
+                System.out.printf("%.1f B", n);
             }
             if (1024f <= n && n<1_048_576f){
                 n=n/1024f;
