@@ -24,7 +24,7 @@ public class Main {
         System.out.print("x3=");c.x = in.nextDouble();
         System.out.print("y3=");c.y = in.nextDouble();
         //Находим площадь треугольника
-        double s = 0.5*(a.x*(b.y-c.y)+b.x*(c.y-a.y)+c.y*(a.y-b.y));
+        double s = 0.5 * Math.abs((b.x - a.x) * (c.y - a.y) - (c.x - a.x) * (b.y - a.y));
         System.out.println("Площадь треугольника: " + s);
     }
 }
