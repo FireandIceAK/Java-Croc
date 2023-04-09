@@ -6,11 +6,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        if (args.length == 0) {
-            System.out.println("Usage: java WordCount <filename>");
-            return;
-        }
-
         int wordCount = 0;
         try (BufferedReader reader = new BufferedReader(new FileReader(args[0]))) {
             String line;
